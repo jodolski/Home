@@ -5,70 +5,83 @@
     <link href="tailwind.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body class="font-montserrat bg-black h-full min-w-640">
-    <header class="fixed w-full py-8 px-12 bg-transparent">
-        <nav class=""> 
-            <ul class="float-left">
-                <li><a class="text-orange-400 font-bold opacity-100 hover:opacity-75 duration-200 text-xl font-bold tracking-wider" href="./home.html">Jeffrey Odolski</a></li>
-            </ul>
-            <ul class="float-right list-reset flex">
-                <li class="ml-8">
-                    <a class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-200r" href="#href">Work</a>
-                </li>
-                <li class="ml-8">
-                    <a class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-200" href="#href">Blog</a>
-                </li>
-                <li class="ml-8">
-                    <a class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-200" href="#href">About</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="pt-32">    
-        <section class="container mx-auto px-16">
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <article class="text-white h-full w-full py-16">
-                    <p>
-                        <p class="leading-none text-5xl">Hello! My name is <a class="font-bold">Jeffrey</a><a class="text-7xl text-orange-400">.</a></p>
-                        <br>
-                        <p class="text-xl">I'm a user-driven and outcome-focused <a class="font-bold">product manager</a> based in Austin, Texas.</p>
-                    </p>
-                </article>
-                <article class="object-contain flex justify-center">
-                    <img class="locked-size" src="images/me.png" alt="Me">
-                </article>
+<body class="font-montserrat bg-gray-900 flex flex-col justify-between">
+    
+    <!-- container -->
+    <div class="container max-w-2xl mx-auto">
+        
+        <!-- navigation bar -->
+        <header>
+            <nav class="flex flex-col sm:flex-row justify-between mb-12 sm:mb-8 mt-8 sm:mt-8 px-6 md:px-0">
+                <div>
+                    <a href="./index.html" class="text-orange-400 font-bold opacity-100 hover:opacity-75 duration-100 text-lg font-bold">Jeffrey Odolski</a>
+                </div>
+                <ul class="flex mt-2 sm:mt-0">
+                    <li class="sm:ml-4">
+                        <a href="./work.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100">Work</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="./blog.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100">Blog</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="./about.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main body -->
+        <main id="main-content" class="mb-32 mt-12 md:mt-24 px-6 md:px-0">
+            <div class="content-container text-white">
+               
+                <!-- top intro -->
+                <img src="images/me.jpg" alt="me" class="rounded-full mx-auto w-32 mb-4">
+                <h1 class="mb-1 text-3xl font-bold">
+                    Hi, I'm Jeffrey!
+                </h1>
+                <p class="mb-0">
+                    I'm a digital and hardware product manager based in Austin, TX. I focus on achieving defined outcomes and elevating user experience.
+                </p>
+
+                <!-- product stuff -->
+                <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
+                    UX & Product Management
+                </h3>
+                <p class="mb-0">
+                    Having owned IT management software and real-time video applications, I've refined my skills revolving around user experience, data analytics, and product releases. To understand my approach, check out some of <a class="text-orange-400 opacity-75 hover:opacity-100 duration-100" href="./work.html">my work</a>.
+                </p>
+
+                <!-- personal stuff -->
+                <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
+                    Personal Projects
+                </h3>
+                <p class="mb-0">
+                    I have deep interest in things such as working on my fuel-sipping rally car, restoring vintage bikes, and thrifting quality leather shoes. I'll occasionally share my experiments and musings on <a class="text-orange-400 opacity-75 hover:opacity-100 duration-100" href="./blog.html">my blog</a>.
+                </p>
             </div>
-            <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
-                <article class="text-white h-full w-full">
-                    <p class="font-bold text-3xl">Products built right<a class="text-4xl text-orange-400">.</a></p>
-                    <br>
-                    From IT management software to real-time video applications, I focus on building high quality and truly valuable products that elevate the user experience. To understand my approach, check out some of <a class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-200" href="./work.html">my work</a>.
-                </article>
-                <article class="text-white h-full w-full">
-                    <p class="font-bold text-3xl">I'm a professional dabblist<a class="text-4xl text-orange-400">.</a></p>
-                    <br>
-                    I have deep interest in things such as working on my fuel-sipping rally car, restoring vintage bikes, and thrifting quality leather shoes. I'll occasionally share my experiments and musings on <a class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-200" href="./blog.html">my blog</a>.
-                </article>
+        </main>
+
+        <!-- black mountain, nevada footer -->
+        <footer class="fixed inset-x-0 bottom-0 h-auto py-0 px-4">
+            <div class="max-w-full">
+                <ul class="flex justify-center mt-24">
+                    <li class="m-4 mb-8">
+                        <a href="https://linkedin.com/in/jodolski"><img class="opacity-75 hover:opacity-100 duration-100" src="images/linkedin.svg" alt="LinkedIn"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="https://github.com/yiffzer"><img class="opacity-75 hover:opacity-100 duration-100"  src="images/github.svg" alt="GitHub"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="mailto:jeffrey.odolski@gmail.com"><img class="opacity-75 hover:opacity-100 duration-100" src="images/email.svg" alt="E-Mail"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="tel:585-337-0291"><img class="opacity-75 hover:opacity-100 duration-100" src="images/phone.svg" alt="Phone"></a>
+                    </li>
+                </ul>
             </div>
-        </section>
-    </main>
-    <footer class="fixed inset-x-0 bottom-0 h-auto py-0 px-4">
-        <div class="max-w-full">
-            <ul class="flex justify-center mt-24">
-                <li class="m-4 mb-8">
-                    <a href="https://linkedin.com/in/jodolski"><img class="opacity-75 hover:opacity-100 duration-200" src="images/linkedin.svg" alt="LinkedIn"></a>
-                </li>
-                <li class="m-4 mb-8">
-                    <a href="https://github.com/yiffzer"><img class="opacity-75 hover:opacity-100 duration-200"  src="images/github.svg" alt="GitHub"></a>
-                </li>
-                <li class="m-4 mb-8">
-                    <a href="mailto:jeffrey.odolski@gmail.com"><img class="opacity-75 hover:opacity-100 duration-200" src="images/email.svg" alt="E-Mail"></a>
-                </li>
-                <li class="m-4 mb-8">
-                    <a href="tel:585-337-0291"><img class="opacity-75 hover:opacity-100 duration-200" src="images/phone.svg" alt="Phone"></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+        </footer>
+
+    </div>
+
 </body>
 </html>

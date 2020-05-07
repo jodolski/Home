@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="base.css" rel="stylesheet" type="text/css">
+    <link href="tailwind.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Jeffrey Odolski</a></li>
-            </ul>
-            <ul>
-                <li><a href="./work.html">Work</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>About me.</h1>
-            <p>
-                I'm a product manager, business analyst, and IT engineer who had been in the industry for five years.
-            </p>
-        </section>
-    </main>
-    <footer>
-        <!-- This is where the parallax desert scene is. -->
-        <ul>
-            <li><a href="https://linkedin.com/in/jodolski">LinkedIn</a></li>
-            <li><a href="https://github.com/yiffzer">Github</a></li>
-            <li><a href="mailto:jeffrey.odolski@gmail.com">E-Mail</a></li>
-     </ul>
-    </footer>
+<body class="font-montserrat bg-gray-900 flex flex-col justify-between">
+    
+    <!-- container -->
+    <div class="container max-w-2xl mx-auto">
+        
+        <!-- navigation bar -->
+        <header>
+            <nav class="flex flex-col sm:flex-row justify-between mb-12 sm:mb-8 mt-8 sm:mt-8 px-6 md:px-0" role="navigation">
+                <div>
+                    <a href="./index.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100 text-lg font-bold">Jeffrey Odolski</a>
+                </div>
+                <ul class="flex mt-2 sm:mt-0">
+                    <li class="sm:ml-4">
+                        <a href="./work.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100">Work</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="./blog.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100">Blog</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="./about.html" class="text-orange-400 font-bold opacity-100 hover:opacity-75 duration-100">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main body -->
+        <main id="main-content" class="mb-32 mt-12 md:mt-24 px-6 md:px-0">
+            <div class="content-container text-white">
+
+                <!-- about text -->
+                <h1 class="mb-6 text-3xl sm:text-4xl md:text-4xl font-bold leading-none">About</h1>
+                
+                <!-- about body -->
+                <p class="mb-6">
+                    Hi, I'm Jeffrey. 👋
+                </p>
+                <p class="mb-6">
+                    I'm an accidental product manager. Prior getting into all things product, I worked several years as support engineer and business analyst at <a class="text-orange-400 opacity-75 hover:opacity-100 duration-100" href="https://aol.com">Aol</a>, <a class="text-orange-400 opacity-75 hover:op acity-100 duration-100" href="https://blackberry.com">Blackberry</a>, and <a class="text-orange-400 opacity-75 hover:opacity-100 duration-100" href="https://datto.com">Datto</a>. It wasn't until I sent out an impassioned e-mail to management about the state of our product that led to an opportunity to be <a class="text-orange-400 opacity-75 hover:opacity-100 duration-100" href="https://kaseya.com">Kaseya's</a> first internal product manager hire and scrum master. My most recent opportunity was at <a class="text-orange-400 opacity-75 hover:opacity-100 duration-100" href="https://convorelay.com">Convo Communications</a> where I focused on improving user experience and launching a new product.
+                </p>
+                <p class="mb-6">
+                    My passion for delighted customers led me to having strong awareness of what makes good quality software that is intuitive and valuable. Backed by years of experience in account management, marketing, quality assurance, internal operations, and user experience, I offer unique insights at every phase of the product lifecycle. With such experience, I developed a <a class="text-orange-400 opacity-75 hover:opacity-100 duration-100" href="./process.html">process</a> that enables me to run product management with discipline.
+                </p>
+                <p class="mb-6">
+                    When I'm not running product, you'll find me discovering nature by foot or bicycle, taking photos of landscapes and architecture, working on my gas-sipping rally car, or playing <a class="text-orange-400 opacity-75 hover:opacity-100 duration-100" href="https://play.na.leagueoflegends.com/en_US">League of Legends</a> (Teemo <a class="text-red-600 font-bold">❤️</a>).
+                </p>
+            </div>
+        </main>
+    
+
+        <!-- black mountain, nevada footer -->
+        <footer class="fixed inset-x-0 bottom-0 h-auto py-0 px-4">
+            <div class="max-w-full">
+                <ul class="flex justify-center mt-24">
+                    <li class="m-4 mb-8">
+                        <a href="https://linkedin.com/in/jodolski"><img class="opacity-75 hover:opacity-100 duration-100" src="images/linkedin.svg" alt="LinkedIn"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="https://github.com/yiffzer"><img class="opacity-75 hover:opacity-100 duration-100"  src="images/github.svg" alt="GitHub"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="mailto:jeffrey.odolski@gmail.com"><img class="opacity-75 hover:opacity-100 duration-100" src="images/email.svg" alt="E-Mail"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="tel:585-337-0291"><img class="opacity-75 hover:opacity-100 duration-100" src="images/phone.svg" alt="Phone"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
 </body>
 </html>
