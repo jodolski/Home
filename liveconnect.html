@@ -55,31 +55,62 @@
                         Introduction
                     </h3>
                     <p class="mb-0">
-                        Kaseya Live Connect is a remote control platform that enables IT engineers to not only remotely control endpoints but also monitor processes and execute scripts remotely without interrupting users. Live Connect is considered to be one of the core offerings of the VSA (Virtual System Administrator™) platform. A long term business goal was to continue improving Live Connect's features, stability, and integration with other products. As product manager of Live Connect, after analyzing and ranking feedback from our community forum, tickets, and social media chatter, I discovered a common pain point which was the amount of time it took to login and start working on an endpoint.
+                        Kaseya Live Connect is a remote control platform that enables IT engineers to remotely control endpoints, monitor processes, execute scripts without interrupting users. Live Connect is considered to be one of the core offerings of the VSA (Virtual System Administrator™) platform. The long term business goal was to continue improving Live Connect's features, stability, and integration with other products. As product manager of Live Connect, I discovered a common pain point which was the amount of time it took to login and start working on an endpoint. Below are the steps I took to address this.
                     </p>
 
                     <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
-                        Interviews
+                        Process
                     </h3>
-                    <p class="mb-4">
-                        With a list of 10 known frequent posters and beta testers, I reached out to them for brief 15-minute conversations and focused on a couple of key questions:
-                    </p>
+
                     <ul class="list-disc mx-8 mb-4">
-                        <li>In what scenarios do they require connecting to endpoints?</li>
-                        <li>What are the steps they take to jump on a remote session?</li>
-                        <li>How long does it take them to connect and login?</li>
-                        <li>In what scenarios do they have to input passwords in a remote control session?</li>
-                        <li>How do they store their system passwords today?</li>
+                        <li>Conducted interviews with a set of workflow questions.</li>
+                        <li>Documented personas, typical workflows, and baseline metrics.</li>
+                        <li>Reviewed existing technologies and integrations (such as AuthAnvil).</li>
+                        <li>Wrote a benefits proposal along with mockups.</li>
+                        <li>Validated dataflow architecture and technical feasility.</li>
+                        <li>Prototyped mockup with select customers.</li>
+                        <li>Presented results to product leadership for approval.</li>
                     </ul>
+
+                    <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
+                        Feature Benefits
+                    </h3>
                     <p class="mb-4">
-                        While I gathered a large set of very interesting (and sometimes polarizing) data, on the topic of logging in onto endpoints, we found out was that it would take as much as 25 to 30 seconds. Considering the number of endpoints that get logged on a daily basis, this would contribute to time wastage reaching 15 minutes a day per engineer. High volume IT engineers with a loss of 15 minutes per employee per day can result in hundreds of dollars of productivity loss per day for MSPs.
+                        <ul class="list-disc mx-8 mb-4">
+                            <li>Support for manual injection into password fields via shortcuts.</li>
+                            <li>Support for automatic login and account switching.</li>
+                            <li>Intelligent enforcement of AuthAnvil credentials</li>
+                            <li>Credentials are globally managed in a secure Keyhold server</li>
+                            <li>Live Connect will tap into IT Glue’s password management component</li>
+                            <li>Efficiency is improved as password and login tasks are automated.</li>        
+                        </ul>
+                    </p>
+                    <p class="mb-4">
+                        This elevates the value proposition of Live Connect and its integration and results in improved user experience overall. 
+                    </p>
+
+                     <!-- live connect integration data flow -->
+                     <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
+                        Diagrams & Mockups
+                    </h3>
+                     <p class="mb-6">
+                        <img src="./images/liveconnectintegration.png" loading="lazy" class="rounded-lg opacity-100 hover:opacity-100 duration-100" alt="photo">
+                    </p>
+                    <p class="mb-6">
+                        <img src="./images/liveconnectaccountswitch.png" loading="lazy" class="rounded-lg opacity-100 hover:opacity-100 duration-100" alt="photo">
+                    </p>
+                    <p class="mb-6">
+                        <img src="./images/liveconnectui3.png" loading="lazy" class="rounded-lg opacity-100 hover:opacity-100 duration-100" alt="photo">
+                    </p>
+                    <p class="mb-6">
+                        <img src="./images/liveconnectui4.png" loading="lazy" class="rounded-lg opacity-100 hover:opacity-100 duration-100" alt="photo">
                     </p>
 
                     <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
-                        Proposed Solution & Design
+                        Results
                     </h3>
                     <p class="mb-4">
-                        I saw a significant opportunity to provide two major benefits: integrate a newly acquired product (AuthAnvil) and enable IT engineers to be more efficient with logging onto remote endpoints.
+                            All customers interviewed bought into the feature and say that they would see significant improvement to their workflow and bottom line if this were to be implemented. A typical MSP with 10 IT engineers would see roughly 2.5 hours of daily productivity saved. This feature was defined as an epic, placed in the backlog, and prioritized.
                     </p>
 
                 </article>
