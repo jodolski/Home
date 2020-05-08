@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Jeffrey Odolski - Project: Kaseya Live Connect</title>
+<head>
+    <link href="base.css" rel="stylesheet" type="text/css">
+    <link href="tailwind.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body class="font-montserrat bg-gray-900 flex flex-col justify-between">
+    
+    <!-- container -->
+    <div class="container max-w-2xl mx-auto">
+        
+        <!-- navigation bar -->
+        <header>
+            <nav class="flex flex-col sm:flex-row justify-between mb-12 sm:mb-8 mt-8 sm:mt-8 px-6 md:px-0" role="navigation">
+                <div>
+                    <a href="./index.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100 text-lg font-bold">Jeffrey Odolski</a>
+                </div>
+                <ul class="flex mt-2 sm:mt-0">
+                    <li class="sm:ml-4">
+                        <a href="./work.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100">Work</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="./blog.html" class="text-orange-400 font-bold opacity-100 hover:opacity-75 duration-100">Blog</a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="./about.html" class="text-orange-400 font-bold opacity-75 hover:opacity-100 duration-100">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main body -->
+        <main id="main-content" class="mb-32 mt-12 md:mt-24 px-6 md:px-0">
+            <div class="content-container text-gray-200">
+                
+                <!-- title -->
+                <article class="h-entry">
+                    <h1 class="p-name mb-3 text-2xl sm:text-3xl md:text-4xl font-bold leading-none lg:max-w-90">Project: Kaseya Live Connect</h1>
+                    <div class="text-sm text-gray-700 dark-mode:text-gray-500 font-semibold mb-4">
+                        <time title="05.08.2020" datetime="2020-05-08T00:00:00+00:00">
+                            May 8th, 2020
+                        </time>
+                    </div>
+
+                    <!-- live connect ui -->
+                    <p class="mb-6">
+                        <img src="./images/liveconnectui.png" loading="lazy" class="rounded-lg opacity-100 hover:opacity-100 duration-100" alt="photo">
+                    </p>
+
+                    <!-- stuff goes here -->
+                    <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
+                        Introduction
+                    </h3>
+                    <p class="mb-0">
+                        Kaseya Live Connect is a remote control platform that enables IT engineers to not only remotely control endpoints but also monitor processes and execute scripts remotely without interrupting users. Live Connect is considered to be one of the core offerings of the VSA (Virtual System Administrator™) platform. A long term business goal was to continue improving Live Connect's features, stability, and integration with other products. As product manager of Live Connect, after analyzing and ranking feedback from our community forum, tickets, and social media chatter, I discovered a common pain point which was the amount of time it took to login and start working on an endpoint.
+                    </p>
+
+                    <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
+                        Interviews
+                    </h3>
+                    <p class="mb-4">
+                        With a list of 10 known frequent posters and beta testers, I reached out to them for brief 15-minute conversations and focused on a couple of key questions:
+                    </p>
+                    <ul class="list-disc mx-8 mb-4">
+                        <li>In what scenarios do they require connecting to endpoints?</li>
+                        <li>What are the steps they take to jump on a remote session?</li>
+                        <li>How long does it take them to connect and login?</li>
+                        <li>In what scenarios do they have to input passwords in a remote control session?</li>
+                        <li>How do they store their system passwords today?</li>
+                    </ul>
+                    <p class="mb-4">
+                        While I gathered a large set of very interesting (and sometimes polarizing) data, on the topic of logging in onto endpoints, we found out was that it would take as much as 25 to 30 seconds. Considering the number of endpoints that get logged on a daily basis, this would contribute to time wastage reaching 15 minutes a day per engineer. High volume IT engineers with a loss of 15 minutes per employee per day can result in hundreds of dollars of productivity loss per day for MSPs.
+                    </p>
+
+                    <h3 class="uppercase font-bold tracking-wider text-sm mb-2 mt-12">
+                        Proposed Solution & Design
+                    </h3>
+                    <p class="mb-4">
+                        I saw a significant opportunity to provide two major benefits: integrate a newly acquired product (AuthAnvil) and enable IT engineers to be more efficient with logging onto remote endpoints.
+                    </p>
+
+                </article>
+            </div>
+        </main>
+
+        <!-- black mountain, nevada footer -->
+        <footer class="fixed inset-x-0 bottom-0 h-auto py-0 px-4">
+            <div class="max-w-full">
+                <ul class="flex justify-center mt-24">
+                    <li class="m-4 mb-8">
+                        <a href="https://linkedin.com/in/jodolski"><img class="opacity-75 hover:opacity-100 duration-100" src="images/linkedin.svg" alt="LinkedIn"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="https://github.com/yiffzer"><img class="opacity-75 hover:opacity-100 duration-100"  src="images/github.svg" alt="GitHub"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="mailto:jeffrey.odolski@gmail.com"><img class="opacity-75 hover:opacity-100 duration-100" src="images/email.svg" alt="E-Mail"></a>
+                    </li>
+                    <li class="m-4 mb-8">
+                        <a href="tel:585-337-0291"><img class="opacity-75 hover:opacity-100 duration-100" src="images/phone.svg" alt="Phone"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+</body>
+</html>
