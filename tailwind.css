@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    /* background: 
+    background: 
     radial-gradient(
       circle at top left,
       rgba(1, 76, 151, 0.431), 
@@ -50,7 +50,7 @@ body {
       at bottom right,
       rgba(26, 17, 2, 0.924), 
       transparent 2400px
-    ); */
+    );
     height: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;    
